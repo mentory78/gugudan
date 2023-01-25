@@ -1,0 +1,105 @@
+<link href="./iframe_styles.css" rel="stylesheet">
+<style>
+
+
+
+#mainDiv .H1 {
+	display:inline-block;
+	font-size:13px;
+	font-weight:bold;
+	margin:10px 0px 0px 10px;
+	padding:3px 6px 3px 14px;
+	border-radius:10px 2px 10px 2px;
+	background-color:#B1DAE1;
+	width:160px;
+}
+
+
+
+
+.gugu {
+	float:left;
+	width:140px;
+	border:1px solid #DCDCDC;
+	margin:5px;
+}
+
+.gugu .title {
+	padding: 5px 0px;
+	text-align:center;
+	background-color:#EDEDED;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.gugu ul {
+	list-style-type: none;
+	padding: 10px;
+	margin:0px 0px 0px 0px;
+}
+
+
+.gugu ul li {
+	list-style-type: none;
+	padding: 5px 0px 5px 5px;
+	margin:0px 10px 0px 0px;
+	font-size:18px;
+}
+
+.gugu .ans {
+	display:inline-block;
+	background-color:#EDEDED;
+	width:30px;
+	text-align:center;
+	cursor:pointer;
+}
+
+
+</style>
+
+
+
+<div id="mainDiv">
+
+<p style="margin-bottom:40px;"><span class="H1">앱</span> <span class="H2">구구단을 하자</span></p>
+
+<div style="padding:0px 10px;">
+<script>
+	var m = 2;
+	var n = 1;
+
+	for (m = 2; m < 10; m++) {
+		document.write("<div class='gugu'>");
+		document.write("<div class='title'>"+m+"단</div>");
+		document.write("<ul>");
+
+		for (n = 1; n < 10; n++) {
+			document.write("<li>"+m + " x " + n + " = <span class='ans' m='"+m+"' n='"+n+"'> ?</span></li>");
+		}
+		document.write("</ul>");
+		document.write("</div>");
+	}
+
+
+var userSelection = document.getElementsByClassName('ans');
+
+for(var i = 0; i < userSelection.length; i++) {
+	userSelection[i].addEventListener("click", function() {
+
+		var MyAnswer = prompt(this.getAttribute("m") + " x " + this.getAttribute("n")+'는?', '');
+		if(MyAnswer !== "") {
+			var Answer = this.getAttribute("m") * this.getAttribute("n");
+			if(Answer == MyAnswer){
+				this.innerHTML = Answer;
+			} else {
+				alert("오답입니다.");
+			}
+		}
+	});
+}
+
+
+</script>
+
+
+</div>
