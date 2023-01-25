@@ -1,0 +1,114 @@
+html {font-size:10px;overflow-y:scroll;margin:0;padding:0;height:100%;}
+body {font-family:sans-serif;font-size:13px;margin:0;padding:0;background-color: #fff; color:#222222;height:100%;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+#mainDiv {
+	width:100%;
+	display:inline-block;
+	padding:20px;
+}
+
+#mainDiv .content {
+	line-height:28px;
+	margin:0px;
+}
+
+#mainDiv .content_board {
+		background-color:#EDEDED;
+	margin:5px 0px 30px 0px;
+	padding:10px;
+	border-radius:3px;
+    border: 1px solid #CBCBCB;
+    box-sizing: border-box;
+
+}
+
+#mainDiv .HeadLine1 {
+	display:block;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding:5px 10px;
+	margin-top:100px;
+}
+
+#mainDiv .H1 {
+	display:inline-block;
+	font-size:13px;
+	font-weight:bold;
+	margin:10px 0px 0px 10px;
+	padding:3px 6px 3px 14px;
+	border-radius:10px 2px 10px 2px;
+	background-color:#B1DAE1;
+	width:160px;
+}
+
+#mainDiv .H2 {
+	font-weight:bold;
+	font-size:13px;
+	margin-left:10px;
+
+}
+
+
+.markerPen1 {
+	background: linear-gradient(to top, #FFF9DD 60%, transparent 40%);
+}
+.markerPen2 {
+	background: linear-gradient(to top, #ABF200 60%, transparent 40%);
+}
+.gugu {
+	float:left;
+	width:140px;
+	border:1px solid #DCDCDC;
+	margin:5px;
+}
+
+.gugu .title {
+	padding: 5px 0px;
+	text-align:center;
+	background-color:#EDEDED;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.gugu ul {
+	list-style-type: none;
+	padding: 10px;
+	margin:0px 0px 0px 0px;
+}
+
+
+.gugu ul li {
+	list-style-type: none;
+	padding: 5px 0px 5px 5px;
+	margin:0px 10px 0px 0px;
+	font-size:18px;
+}
+
+.gugu .ans {
+	display:inline-block;
+	background-color:#EDEDED;
+	width:30px;
+	text-align:center;
+	cursor:pointer;
+}
+
+
+.imageStyle {
+	padding-left:80px;
+	display:inline-block;
+}
+
+pre {
+	background-color:#EDEDED;
+	margin:5px 0px 30px 0px;
+	padding:10px;
+	border-radius:3px;
+    border: 1px solid #CBCBCB;
+    box-sizing: border-box;
+}
